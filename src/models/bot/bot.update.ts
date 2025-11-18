@@ -96,7 +96,6 @@ export class BotUpdate implements OnModuleInit {
         });
 
 
-        // ===== TUGMALAR BILAN ISHLASH =====
 
         // 💸 Xarajat qo'shish tugmasi
         bot.hears('💸 Xarajat qo\'shish', async (ctx) => {

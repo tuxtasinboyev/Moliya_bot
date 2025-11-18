@@ -66,7 +66,7 @@ export async function handleTextMessage(
     // Yangi kategoriya nomi
     if (session.step === "new_category_name") {
         const categoryName = text;
-        const category = await prisma.user.category.upsert({
+        const category = await prisma.category.upsert({
             where: { name: categoryName },
             update: {},
             create: { name: categoryName },
